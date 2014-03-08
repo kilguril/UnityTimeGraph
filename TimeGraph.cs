@@ -157,7 +157,7 @@ public class TimeGraph : MonoBehaviour
 	{
 		m_lineMaterial = new Material
 		( 
-			"Shader \"Lines/Colored Blended\" {" +
+			"Shader \"Lines/VertexColored\" {" +
 		    "SubShader { Pass { " +
 		    "    ZWrite Off Cull Off Fog { Mode Off } " +
 		    "    BindChannels {" +
