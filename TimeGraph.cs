@@ -49,7 +49,7 @@ public class TimeGraph : MonoBehaviour
 		return newDataSets.Length - 1;
 	}
 	
-	void Start()
+	void Awake()
 	{
 		ClampRanges();
 	}
