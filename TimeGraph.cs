@@ -38,13 +38,15 @@ public class TimeGraph : MonoBehaviour
 		m_dataSets[ set ].PushData( value );
 	}
 	
-	public void AddDataSet( TimeGraphDataSet dataSet )
+	public int AddDataSet( TimeGraphDataSet dataSet )
 	{
 		TimeGraphDataSet[] newDataSets = new TimeGraphDataSet[ m_dataSets.Length + 1 ];
 		m_dataSets.CopyTo( newDataSets, 0 );
 		
 		newDataSets[ newDataSets.Length - 1 ] = dataSet;
 		m_dataSets = newDataSets;
+		
+		return newDataSets.Length - 1;
 	}
 	
 	void Start()
